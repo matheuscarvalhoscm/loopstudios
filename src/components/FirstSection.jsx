@@ -16,23 +16,26 @@ function FirstSection() {
       }
     >
       <header className='header'>
-        <img className='logo-image' src={logo} alt='Loopstudios' />
+        <img className='logo-image' src={ logo } alt='Loopstudios' />
         <nav className='nav-bar'>
-          <div className='hamburger-menu' onClick={mobileMenu}>
+          <div
+            className={ !isActive ? 'hamburger-menu' : 'hamburger-menu-active' }
+            onClick={mobileMenu}
+          >
             <span className='bar' />
             <span className='bar' />
             <span className='bar' />
           </div>
         </nav>
       </header>
-      <ul className={isActive ? 'nav-menu-active' : 'nav-menu'}>
-        {navLinks.map((link, index) => (
-          <li className='nav-item' key={index}>
+      <ul className={ isActive ? 'nav-menu-active' : 'nav-menu' }>
+        { navLinks.map((link, index) => (
+          <li className='nav-item' key={ index }>
             <a className='nav-link' href='#'>
-              {link}
+              { link }
             </a>
           </li>
-        ))}
+        )) }
       </ul>
       <div className='first-section-hero'>
         <p
