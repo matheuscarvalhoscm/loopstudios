@@ -128,3 +128,31 @@
   color: var(--dark-gray);
   font-family: 'Alata', sans-serif;
 }
+
+.third-section-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(0.3);
+  height: 9em;
+  margin: 2em 1.3em;
+  width: 90%;
+}
+
+.third-section-text {
+  color: var(--white);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-right: 5.5em;
+  padding: 1.5em 20px;
+}
