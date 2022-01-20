@@ -3,6 +3,7 @@ import { useState } from 'react';
 import logo from '../images/logo.svg';
 
 function FirstSection() {
+  const repositoryLink = 'https://github.com/matheuscarvalhoscm/loopstudios';
   const navLinks = ['ABOUT', 'CAREERS', 'EVENTS', 'PRODUCTS', 'SUPPORT'];
   const [isActive, setIsActive] = useState(false);
 
@@ -30,7 +31,7 @@ function FirstSection() {
       <ul className={ isActive ? 'nav-menu-active' : 'nav-menu' }>
         { navLinks.map((link, index) => (
           <li className='nav-item' key={ index }>
-            <a className='nav-link' href='#'>
+            <a className='nav-link' href={ repositoryLink }>
               { link }
             </a>
           </li>
